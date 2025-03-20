@@ -1,3 +1,4 @@
+# Patricio Lugo A01707192 - Claudio López A01710963
 from music21 import note, clef, chord, instrument, stream, metadata
 import note_insertion
 
