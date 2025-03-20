@@ -367,3 +367,89 @@ def m021(part_):
     a.duration.quarterLength = 1.5
     a.insertLyric('ly')
     part_.append(a)
+
+def m022(part_):
+
+    a = note.Note('A')
+    a.duration.quarterLength = 0.5
+    a.insertLyric('en')
+    part_.append(a)
+
+    g = note.Note('G')
+    g.duration.quarterLength = 0.5
+    g.insertLyric('ter')
+    part_.append(g)
+
+    g2 = note.Note('G')
+    g2.duration.quarterLength = 2
+    g2.insertLyric('ing')
+    part_.append(g2)
+
+    c = note.Note('C')
+    c.duration.quarterLength = 0.5
+    c.insertLyric('her')
+    part_.append(c)
+
+    c2 = note.Note('C')
+    c2.duration.quarterLength = 1.5
+    c2.insertLyric('world')
+    part_.append(c2)
+
+def m023(part_):
+
+    r = note.Rest()
+    r.duration.quarterLength = 3
+    part_.append(r)
+
+def m024(part_):
+
+    r = note.Rest()
+    r.duration.quarterLength = 3
+    part_.append(r)
+
+    c = note.Note('C')
+    c.insertLyric("I'm")
+    part_.append(c)
+
+def m025(part_):
+
+    d = note.Note('D')
+    d.insertLyric('glad')
+    part_.append(d)
+
+    bflat = note.Note('Bb')
+    bflat.insertLyric('when')
+    part_.append(bflat)
+
+    bflat2 = note.Note('Bb')
+    bflat2.duration.quarterLength = 0.5
+    bflat2.insertLyric('ev')
+    part_.append(bflat2)
+
+    a = note.Note('A')
+    a.insertLyric('er')
+    part_.append(a)
+
+    a2 = note.Note('A')
+    a2.insertLyric('I')
+    part_.append(a2)
+
+def m026(part_):
+
+    g = note.Note('G')
+    g.duration.quarterLegth = 1.5
+    g.insertLyric('can')
+    part_.append(g)
+
+    g2 = note.Note('G')
+    g2.insertLyric('share')
+    part_.append(g2)
+
+    c = note.Note('C')
+    c.duration.quarterLength = 0.5
+    c.insertLyric('her')
+    part_.append(c)
+
+    c2 = note.Note('C')
+    c2.insertLyric('laugh')
+    part_.append(c2)

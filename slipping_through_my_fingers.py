@@ -31,8 +31,11 @@ note_insertion1.m018(violoncelloPart)
 note_insertion1.m019(violoncelloPart)
 note_insertion1.m020(violoncelloPart)
 note_insertion1.m021(violoncelloPart)
-
-
+note_insertion1.m022(violoncelloPart)
+note_insertion1.m023(violoncelloPart)
+note_insertion1.m024(violoncelloPart)
+note_insertion1.m025(violoncelloPart)
+note_insertion1.m026(violoncelloPart)
 
 s.insert(0, violoncelloPart)
 clef.bestClef(s, allowTreble8vb=True)
