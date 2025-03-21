@@ -242,6 +242,7 @@ def m014(part_):
 
     g = note.Note('G')
     g.insertLyric('down')
+    part_.append(g)
 
     g2 = note.Note('G')
     g2.duration.quarterLength = 0.5
@@ -271,7 +272,7 @@ def m015(part_):
 def m016(part_):
 
     r = note.Rest()
-    r.duration.quarterLength = 3.5
+    r.duration.quarterLength = 2.5
     part_.append(r)
 
     d = note.Note('D')
@@ -341,322 +342,133 @@ def m020(part_):
     r.duration.quarterLength = 3.5
     part_.append(r)
 
-    d = note.Note('D')
-    d.duration.quarterLength = 0.5
-    d.insertLyric('And')
-    part_.append(d)
-
-def m021(part_):
-
-    d = note.Note('D')
-    d.duration.quarterLength = 0.5
-    d.insertLyric('with')
-    part_.append(d)
-
-    bflat = note.Note('Bb')
-    bflat.duration.quarterLength = 1.5
-    bflat.insertLyric('out')
-    part_.append(bflat)
-
-    bflat2 = note.Note('Bb')
-    bflat2.duration.quarterLength = 0.5
-    bflat2.insertLyric('real')
-    part_.append(bflat2)
-
-    a = note.Note('A')
-    a.duration.quarterLength = 1.5
-    a.insertLyric('ly')
-    part_.append(a)
-
-def m022(part_):
-
-    a = note.Note('A')
-    a.duration.quarterLength = 0.5
-    a.insertLyric('en')
-    part_.append(a)
-
-    g = note.Note('G')
-    g.duration.quarterLength = 0.5
-    g.insertLyric('ter')
-    part_.append(g)
-
-    g2 = note.Note('G')
-    g2.duration.quarterLength = 2
-    g2.insertLyric('ing')
-    part_.append(g2)
+def small_seq(part_):
 
     c = note.Note('C')
     c.duration.quarterLength = 0.5
-    c.insertLyric('her')
     part_.append(c)
 
     c2 = note.Note('C')
-    c2.duration.quarterLength = 1.5
-    c2.insertLyric('world')
     part_.append(c2)
 
-def m023(part_):
+def b_dChord(part_, duration = 1):
+
+    b_d = chord.Chord(['B3', 'D'])
+    b_d.duration.quarterLength = duration
+    part_.append(b_d)
+
+def c_eChord(part_, duration = 1):
+
+    c_e = chord.Chord(['C', 'E'])
+    c_e.duration.quarterLength = duration
+    part_.append(c_e)
+
+def db_fChord(part_, duration = 1):
+
+    db_f = chord.Chord(['Db', 'F'])
+    db_f.duration.quarterLength = duration
+    part_.append(db_f)
+
+def silence(part_, duration = 1):
 
     r = note.Rest()
-    r.duration.quarterLength = 3
+    r.duration.quarterLength = duration
     part_.append(r)
 
-def m024(part_):
+def eb_gChord(part_, duration = 1):
 
-    r = note.Rest()
-    r.duration.quarterLength = 3
-    part_.append(r)
+    eb_g = chord.Chord(['Eb', 'G'])
+    eb_g.duration.quarterLength = duration
+    part_.append(eb_g)
 
-    c = note.Note('C')
-    c.insertLyric("I'm")
-    part_.append(c)
+def f_aChord(part_, duration = 1):
 
-def m025(part_):
+    f_a = chord.Chord(['F', 'A'])
+    f_a.duration.quarterLength = duration
+    part_.append(f_a)
 
-    d = note.Note('D')
-    d.insertLyric('glad')
-    part_.append(d)
+def g_bbChord(part_, duration = 1):
 
-    bflat = note.Note('Bb')
-    bflat.insertLyric('when')
-    part_.append(bflat)
+    g_bb = chord.Chord(['G', 'Bb'])
+    g_bb.duration.quarterLength = duration
+    part_.append(g_bb)
 
-    bflat2 = note.Note('Bb')
-    bflat2.duration.quarterLength = 0.5
-    bflat2.insertLyric('ev')
-    part_.append(bflat2)
+def e_gChord(part_, duration = 1):
+
+    e_g = chord.Chord(['E', 'G'])
+    e_g.duration.quarterLength = duration
+    part_.append(e_g)
+
+def d_fChord(part_, duration = 1):
+
+    d_f = chord.Chord(['D', 'F'])
+    d_f.duration.quarterLength = duration
+    part_.append(d_f)
+
+def d_gChord(part_, duration = 1):
+
+    d_g = chord.Chord(['D', 'G'])
+    d_g.duration.quarterLength = duration
+    part_.append(d_g)
+
+def c_fChord(part_, duration = 1):
+
+    c_f = chord.Chord(['C', 'F'])
+    c_f.duration.quarterLength = duration
+    part_.append(c_f)
+
+def smileChord(part_):
 
     a = note.Note('A')
-    a.insertLyric('er')
-    part_.append(a)
-
-    a2 = note.Note('A')
-    a2.insertLyric('I')
-    part_.append(a2)
-
-def m026(part_):
-
-    g = note.Note('G')
-    g.duration.quarterLength = 1.5
-    g.insertLyric('can')
-    part_.append(g)
-
-    g2 = note.Note('G')
-    g2.insertLyric('share')
-    part_.append(g2)
-
-    c = note.Note('C')
-    c.duration.quarterLength = 0.5
-    c.insertLyric('her')
-    part_.append(c)
-
-    c2 = note.Note('C')
-    c2.insertLyric('laugh')
-    part_.append(c2)
-
-def m027(part_):
-
-    a = note.Note('A')
-    a.duration.quarterLength = 0.5
-    part_.append(a)
-
-    a2 = note.Note('A')
-    a2.insertLyric('ter')
-    part_.append(a2)
-
-    r = note.Rest()
-    part_.append(r)
-
-    c = note.Note('C')
-    c.insertLyric('That')
-    part_.append(c)
-
-def m028(part_):
-
-    c = note.Note('C')
-    c.duration.quarterLength = 0.5
-    c.insertLyric('fun')
-    part_.append(c)
-
-    g = note.Note('G')
-    g.duration.quarterLength = 1.5
-    g.insertLyric('ny')
-    part_.append(g)
-
-    g2 = note.Note('G')
-    g2.duration.quarterLength = 0.5
-    g2.insertLyric('lit')
-    part_.append(g2)
-
-    f = note.Note('F')
-    f.insertLyric('tle')
-    part_.append(f)
-
-    f2 = note.Note('F')
-    f2.duration.quarterLength = 2.5
-    f2.insertLyric('girl')
-    part_.append(f2)
-
-def m029(part_):
-
-    r = note.Rest()
-    r.duration.quarterLength = 2
-    part_.append(r)
-
-def m030(part_):
-
-    r = note.Rest()
-    r.duration.quarterLength = 2
-    part_.append(r)
-
-    a = note.Note('A3')
-    a.duration.quarterLength = 0.5
-    a.insertLyric('Slip')
-    part_.append(a)
-
-    c = note.Note('C')
-    c.duration.quarterLength = 0.5
-    c.insertLyric('ping')
-    part_.append(c)
-
-    f = note.Note('F')
-    f.duration.quarterLength = 0.5
-    f.insertLyric('through')
-    part_.append(f)
-
-    a2 = note.Note('A')
-    a2.duration.quarterLength = 0.5
-    a2.insertLyric('my')
-    part_.append(a2)
-
-def m031(part_):
-
-    a = note.Note('A')
-    a.duration.quarterLength = 0.5
-    a.insertLyric('fin')
-    part_.append(a)
-
-    g = note.Note('G')
-    g.duration.quarterLength = 1.5
-    g.insertLyric('gers')
-    part_.append(g)
-
-    g2 = note.Note('G')
-    g2.insertLyric('all')
-    part_.append(g2)
-
-    f = note.Note('F')
-    f.duration.quarterLength = 0.5
-    f.insertLyric('the')
-    part_.append(f)
-
-    f2 = note.Note('F')
-    f2.duration.quarterLength = 1.5
-    f2.insertLyric('time')
-    part_.append(f2)
-
-def m032(part_):
-
-    c = note.Note('C5')
-    c.insertLyric('I')
-    part_.append(c)
-
-    a = note.Note('A')
-    a.insertLyric('try')
-    part_.append(a)
-
-    f = note.Note('F')
-    f.duration.quarterLength = 0.5
-    f.insertLyric('to')
-    part_.append(f)
+    a.duration.quarterLength = 4
 
     e = note.Note('E')
-    e.duration.quarterLength = 1.5
-    e.insertLyric('cap')
-    part_.append(e)
-
-def m033(part_):
-
-    c = note.Note('C5')
-    c.insertLyric('ture')
-    part_.append(c)
-
-    a = note.Note('A')
-    a.insertLyric('ev')
-    part_.append(a)
-
-    e = note.Note('E')
-    e.duration.quarterLength = 0.5
-    e.insertLyric("'ry")
-    part_.append(e)
+    e.duration.quarterLength = 2
 
     d = note.Note('D')
-    d.insertLyric('min')
-    part_.append(d)
+    d.duration.quarterLength = 4
 
-def m034(part_):
+    smile = chord.Chord([a,e,d])
+    part_.append(smile)
 
-    g = note.Note('G')
-    g.duration.quarterLength = 2.5
-    g.insertLyric('ute,')
-    part_.append(g)
+def a_cChord(part_, duration = 1):
 
-    r = note.Rest()
-    part_.append(r)
+    a_c = chord.Chord(['A3', 'C'])
+    a_c.duration.quarterLength = duration
+    part_.append(a_c)
 
-def m035(part_):
+def bb_dChord(part_, duration = 1):
 
-    r = note.Rest()
-    part_.append(r)
+    bb_d = chord.Chord(['Bb3', 'D'])
+    bb_d.duration.quarterLength = duration
+    part_.append(bb_d)
 
-    g = note.Note('G')
-    g.duration.quarterLength = 0.5
-    g.insertLyric('the')
-    part_.append(g)
+def d_bbChord(part_, duration = 1):
 
-    r2 = note.Rest()
-    r2.duration.quarterLength = 0.5
-    part_.append(r2)
+    d_bb = chord.Chord(['D', 'Bb'])
+    d_bb.duration.quarterLength = duration
+    part_.append(d_bb)
 
-    f = note.Note('F')
-    f.insertLyric('feel')
-    part_.append(f)
+def b_fChord(part_, duration = 1):
+
+    b_f = chord.Chord(['B3', 'F'])
+    b_f.duration.quarterLength = duration
+    part_.append(b_f)
+
+def note_seq(part_):
 
     d = note.Note('D')
     d.duration.quarterLength = 0.5
-    d.insertLyric('ing')
     part_.append(d)
 
-    c = note.Note('C')
-    c.insertLyric('in')
-    part_.append(c)
+    d2 = note.Note('D')
+    d2.duration.quarterLength = 0.75
+    part_.append(d2)
 
-def m036(part_):
-
-    f = note.Note('F')
-    f.insertLyric('it')
-    part_.append(f)
+    d3 = note.Note('D')
+    d3.duration.quarterLength = 3
+    part_.append(d3)
 
     r = note.Rest()
-    r.duration.quarterLength = 0.5
+    r.duration.quarterLength = 0.25
     part_.append(r)
-
-    a = note.Note('A3')
-    a.duration.quarterLength = 0.5
-    a.insertLyric('Slip')
-    part_.append(a)
-
-    c = note.Note('C')
-    c.duration.quarterLength = 0.5
-    c.insertLyric('ping')
-    part_.append(c)
-
-    f2 = note.Note('F')
-    f2.duration.quarterLength = 0.5
-    f2.insertLyric('through')
-    part_.append(f2)
-
-    a2 = note.Note('A')
-    a2.duration.quarterLength = 0.5
-    a2.insertLyric('my')
-    part_.append(a2)
