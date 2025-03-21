@@ -56,5 +56,5 @@ note_insertion.m036(violoncelloPart)
 note_insertion.m031(violoncelloPart)
 
 s.insert(0, violoncelloPart)
-s.write('midi', 'fiesta.mid')
+s.write('midi', 'song.mid')
 s.show()
