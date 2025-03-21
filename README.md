@@ -1,2 +1,3 @@
 # KaraokeMusic21
-Creation of several songs with music21 and karaoke interface
+Demo of a simple karaoke using music21 and pygame
+(Example song: Slipping through my fingers)
