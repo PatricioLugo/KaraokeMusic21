@@ -99,5 +99,5 @@ note_insertion.f_aChord(piano1, 3)
 
 s.insert(0, violoncelloPart)
 s.insert(0, piano1)
-#s.write('musicxml', 'song.xml')
+s.write('musicxml', 'song.xml')
 s.show()
